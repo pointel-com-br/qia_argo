@@ -10,7 +10,8 @@
   "main": "./build/main.js",
   "types": "./types/main.d.ts",
   "dependencies": {
-    "qin_case": "file:../qin_case"
+    "qin_case": "file:../qin_case",
+    "qin_soul": "file:../qin_soul"
   },
   "devDependencies": {
     "qin_desk": "file:../qin_desk",

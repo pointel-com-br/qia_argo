@@ -1,0 +1,8 @@
+print("Exporting DataBase...")
+
+import br.net.pin.qin_sunwiz.data.DataLink;
+import br.net.pin.qin_sunwiz.data.DataBase;
+
+env = System.getenv()
+link = DataLink.fromAssigned(env["QIR_BTEXPO_LINK"])
+print(link)
