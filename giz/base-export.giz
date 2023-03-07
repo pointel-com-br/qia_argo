@@ -1,8 +1,22 @@
-print("Exporting DataBase...")
-
 import br.net.pin.qin_sunwiz.data.DataLink;
 import br.net.pin.qin_sunwiz.data.DataBase;
 
-env = System.getenv()
-link = DataLink.fromAssigned(env["QIR_BTEXPO_LINK"])
-print(link)
+print("Exporting DataBase...")
+
+name = args[0]
+base = args[1]
+path = args[2]
+port = args[3]
+data = args[4]
+user = args[5]
+pass = args[6]
+folder = args[7]
+
+print("Name: " + name)
+print("Base: " + base)
+print("Path: " + path)
+print("Port: " + port)
+print("Data: " + data)
+print("User: " + user)
+print("Pass: " + pass)
+print("Folder: " + folder)
