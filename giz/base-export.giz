@@ -1,5 +1,7 @@
 import br.net.pin.qin_sunwiz.data.DataLink;
 import br.net.pin.qin_sunwiz.data.DataBase;
+import br.net.pin.qin_sunwiz.data.Table;
+import br.net.pin.qin_sunwiz.flow.CSVExport;
 
 print("Exporting DataBase...")
 
@@ -12,11 +14,16 @@ user = args[5]
 pass = args[6]
 folder = args[7]
 
-print("Name: " + name)
-print("Base: " + base)
-print("Path: " + path)
-print("Port: " + port)
-print("Data: " + data)
-print("User: " + user)
-print("Pass: " + pass)
-print("Folder: " + folder)
+name = name ? name : null
+base = base ? DataBase.fromString(base) : null
+path = path ? path : null
+port = port ? Integer.parseInt(port) : null
+data = data ? data : null
+user = user ? user : null
+pass = pass ? pass : null
+
+link = new DataLink(name, base, path, port, data, user, pass)
+folder = folder ? new File(folder) : null
+
+export = new CSVExport(link, folder, pace)
+export.run()

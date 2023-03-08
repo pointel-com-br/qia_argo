@@ -95,7 +95,8 @@ export class BaseTools extends QinColumn {
     this.qinpel.talk.giz
       .run({
         exec: "argo/base-export.giz",
-        args
+        args,
+        joinErrs: true
       })
       .then((token) => {
         this.qinpel.talk.issued.readStreamOut({
