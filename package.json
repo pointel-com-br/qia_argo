@@ -16,6 +16,7 @@
   "devDependencies": {
     "qin_desk": "file:../qin_desk",
     "typescript": "^4",
+    "webpack": "^4",
     "webpack-cli": "^4"
   }
 }
